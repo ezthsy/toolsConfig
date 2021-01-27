@@ -1,5 +1,7 @@
+" vim config file in ~
+"  by ezthsy
+
 " Comments in Vimscript start with a `"`.
-" in /Users/username
 " If you open this file in Vim, it'll be syntax highlighted for you.
 
 " Vim is based on Vi. Setting `nocompatible` switches from the default

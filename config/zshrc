@@ -1,3 +1,6 @@
+# zsh config file in ~
+# by ezthsy
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -114,11 +117,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# make rm -> trash
 
-alias rm="trash"
 
 
 alias proxy="export ALL_PROXY=socks5://127.0.0.1:7890" alias unproxy="unset ALL_PROXY"
 
-# key maps
+#
+#
+# shortcut alias
+#
+
+# make rm -> trash
+alias rm="trash"
+history10(){
+   history | awk '{$1="";print substr($0,2)}' | sort | uniq -c | sort -n | tail -n 10
+}
